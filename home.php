@@ -8,7 +8,7 @@
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand">Materials</a>
+                    <a class="navbar-brand">Home</a>
                 </div>
 				<?php include"dropp.php"?>
             </div>
@@ -63,7 +63,6 @@
 					</div>
 				 </div>
 			</div>
-			
 <?php include"footer.php"?>
 	</div>
 </div>

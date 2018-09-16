@@ -29,32 +29,46 @@
 					<tr><td>Password</td></tr><tr><td><br></td></tr>
 					<tr><td><input type="password" name="pass" required/></td></tr>
 				</table><br>
-				<input type="submit" name="btnlogin" value="Log In"/>
+				<table align="center" >
+					<tr><td>Name</td></tr><tr><td><br></td></tr>
+					<tr><td><input type="text" name="funm" required/></td></tr>
+				</table><br>
+				<input type="submit" name="btnregister" value="Register"/>
 			</form>
 	</div>
-<?php
-if(isset($_POST['btnlogin']))
-{
-$user= $_POST['user'];
-$pass= $_POST['pass'];
+	<?php
+	if(isset($_POST['btnregister']))
+	{
+	$user= $_POST['user'];
+	$pass= $_POST['pass'];
+	$funm= $_POST['funm'];
+	/*$type= $_POST['type'];*/
 
-$sel_query = "select username, password from user where username = '$user' and password = '$pass'";
-	$sel_result = mysql_query($sel_query) or die(mysql_error());
-	$row=mysql_fetch_array($sel_result);
-	$exist = mysql_num_rows($sel_result);
-		if($exist > 0)
-			{
-				$_SESSION['user'] = $row['username'];
-				header('location:home.php');	
-			}
-		else
-			{
-				echo"<script language='javascript'> window.alert('Username and Password not matched!');";
-				echo"</script>";
-			}			
-} 
-?>
+	$sel_query = "select username, password from user where username = '$user' and password = '$pass'";
+			$sel_result = mysql_query($sel_query) or die(mysql_error());
+			$exist = mysql_num_rows($sel_result);
+			
+			if($exist > 0)
+				{
+					echo"<script language='javascript'> window.alert('Account Already Exist!');";
+					echo"</script>";
+				}
+				
+				else
+				{
+					/*$query = "insert into user (username,password,funm,usertype) 
+										values ('$user', '$pass', '$funm', '$type')";*/
+					$query = "insert into user (username,password,funm) 
+										values ('$user', '$pass', '$funm')";
+					$_SESSION['user'] = $row['username'];
+					header('location:index.php');
+					$result = mysql_query($query) or die(mysql_error());
+							echo"<script language='javascript'>window.confirm('Successfully register')";
+							echo"</script>";	
+				}			
+	} 
+	?>
 </div>
-<?php include"footeri.php"?>
+<?php include"footerr.php"?>
 </body>
 </html>
