@@ -23,8 +23,7 @@
                                 <p class="category"></p>
                             </div>
                             <div class="content table-responsive table-full-width">
-							<?php include"ann.php" ?>
-                                <!--
+							<?php /* include"prodout.php" */ ?>
 								<table class="table table-hover table-striped">
                                     <thead>
                                         <th>ID</th>
@@ -141,7 +140,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-								-->
                             </div>
                         </div>
                     </div>
