@@ -97,13 +97,13 @@
 				<tr>
 					<th><b>Item#</b></th>
     				<th><b>Name</b></th>
-    				<th><b>Description</b></th>
-					<th><b>Quantity</b></th>
-					<th><b>Price</b></th>
+    				<th><b>Supplier</b></th>
+					<th><b>Warehouse</b></th>
+					<th><b>Barrels</b></th>
+					<th><b>Boxes</b></th>
 					<th><b></b></th>
-					<th><b></b></th>
-					<th><b>Manufactured Date</b></th>
-					<th><b>Expiration Date</b></th>
+					<th><b>In Date</b></th>
+					<th><b>Exp Date</b></th>
 					<th><b></b></th>
 					<th><b></b></th>
     				<th><b></b></th>
