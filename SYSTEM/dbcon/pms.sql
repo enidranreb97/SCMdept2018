@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 13, 2018 at 10:15 PM
+-- Generation Time: Dec 12, 2018 at 02:38 AM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -59,7 +59,7 @@ CREATE TABLE `companyname` (
 --
 
 INSERT INTO `companyname` (`pk_ID`, `name`, `companyNO`) VALUES
-(1, 'Goldilocks', 'Goldi12345');
+(1, 'Ferma Warehouse', 'Ware123');
 
 -- --------------------------------------------------------
 
@@ -121,8 +121,8 @@ CREATE TABLE `register` (
 --
 
 INSERT INTO `register` (`pk_ID`, `projectName`, `projectDesc`, `category`, `cost`, `companyName`, `companyNo`, `startdate`, `enddate`, `overall`, `pm`, `division`, `department`, `createddate`, `createdtime`) VALUES
-(123, 'RIMS', 'Restaurant Inventory Management System', 'Project Type 1', 40000, 'Goldilocks', '', '07/01/2018', '08/31/2018', 'On-Going', 'Dexter', 14, 123, '2018-08-13', '19:49:53 PM'),
-(124, 'ROS', 'Restaurant Ordering System', 'Project Type 2', 10000, 'Goldilocks', '', '08/15/2018', '08/31/2018', 'On-Going', 'Dexter', 14, 123, '2018-08-14', '01:49:20 AM');
+(145, 'aa', 'mama', '', 1000, '', '', '2018-12-08', '2018-12-09', '', '', 0, 0, '', ''),
+(146, 'Fermentation', 'agik', '', 19, '', '', '2018-01-01', '2018-02-28', '', '', 0, 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -299,7 +299,7 @@ ALTER TABLE `position`
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `pk_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+  MODIFY `pk_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
 --
 -- AUTO_INCREMENT for table `scope`
 --
@@ -314,7 +314,7 @@ ALTER TABLE `task`
 -- AUTO_INCREMENT for table `teammember`
 --
 ALTER TABLE `teammember`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
